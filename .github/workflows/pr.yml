@@ -1,6 +1,7 @@
 on: [pull_request, workflow_dispatch]
 name: terraform fmt
-
+permissions:
+  contents: write
 jobs:
   fmt:
     runs-on: ubuntu-latest
