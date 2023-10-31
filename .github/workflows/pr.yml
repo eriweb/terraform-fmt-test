@@ -15,4 +15,4 @@ jobs:
           git config --global user.name "automatic pr"
           git add *.tf
           git commit -m 'automatic fmt'
-          git push
+          git push origin ${{ github.head_ref }}
