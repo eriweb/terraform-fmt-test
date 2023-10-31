@@ -17,3 +17,4 @@ jobs:
           git add *.tf
           git commit -m 'automatic fmt'
           echo "git push origin ${{ github.head_ref }}"
+          git push origin ${{ github.head_ref }}
